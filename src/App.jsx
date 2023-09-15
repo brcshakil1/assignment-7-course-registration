@@ -2,7 +2,8 @@ import { useState } from 'react';
 import './App.css'
 import Cards from './components/Cards/Cards';
 import Cart from './components/Cart/Cart';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -33,24 +34,27 @@ function App() {
 
   return (
     <>
+      <ToastContainer />
       <h1 className='text-4xl font-bold text-center my-12'>Course Registration</h1>
-      <div className='flex flex-col-reverse lg:flex-row container mx-auto gap-10'>
+      <div className='container mx-auto flex flex-col-reverse lg:flex-row lg:justify-between gap-10'>
 
         {/* Cards */}
         <Cards handleCoursesName={handleCoursesName}/>
 
         {/* cart */}
-        <div className='bg-white p-4 rounded-lg md:h-[400px] mx-4'>
-          <h3 className='text-[18px] text-[#2F80ED] font-bold pb-4'>Credit Hour Remaining {remaining} hr</h3>
-          <hr />
-          <h3 className='pt-4 text-[18px] font-bold'>Course Name</h3>
+        <div className='mx-4'>
+          <div className='bg-white w-full rounded-lg p-4'>
+            <h3 className='text-[18px] text-[#2F80ED] font-bold pb-4'>Credit Hour Remaining {remaining} hr</h3>
+            <hr />
+            <h3 className='pt-4 text-[18px] font-bold'>Course Name</h3>
 
-          <Cart courses={courses}/>
+            <Cart courses={courses}/>
 
-          <hr />
-          <h3 className='py-4'>Total Credit Hour : {hours}</h3>
-          <hr />
-          <h3 className='pt-4'>Total Price : {courseTotalPrice} USD</h3>
+            <hr />
+            <h3 className='py-4'>Total Credit Hour : {hours}</h3>
+            <hr />
+            <h3 className='pt-4'>Total Price : {courseTotalPrice} USD</h3>
+          </div>
         </div>
 
       </div>

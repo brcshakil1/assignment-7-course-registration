@@ -7,18 +7,21 @@ function App() {
   const [courses, setCourses] = useState([]);
   const [hours, setHours] = useState(0);
   const [remaining, setRemaining] = useState(20);
+  const [courseTotalPrice, setCourseTotalPrice] = useState(0);
 
   const handleCoursesName = (id,item, credit, price) => {
     const ifMatch = courses.find(course => course.id === id);
     const totalHours = hours + credit;
+    const totalPrice= courseTotalPrice + price;
     if(ifMatch) {
       alert('Course is already exist')
     } else {
       if(totalHours > 20) {
         alert("Your can't credit more than 20 hours")
       } else {
+        setCourseTotalPrice(totalPrice);
         setHours(totalHours);
-        setRemaining(remaining - credit)
+        setRemaining(remaining - credit);
         setCourses([...courses, item]);
       }
     }
@@ -43,7 +46,7 @@ function App() {
           <hr />
           <h3 className='py-4'>Total Credit Hour : {hours}</h3>
           <hr />
-          <h3 className='pt-4'>Total Price : 48000 USD</h3>
+          <h3 className='pt-4'>Total Price : {courseTotalPrice} USD</h3>
         </div>
 
       </div>

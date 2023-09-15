@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faDollarSign } from '@fortawesome/free-solid-svg-icons'
-
+import { FiDollarSign } from 'react-icons/fi';
+import { GoBook } from 'react-icons/go';
 const Card = ({course, handleCoursesName}) => {
     const {id, course_name, details, credit, price, img} = course;
     return (
@@ -11,11 +10,11 @@ const Card = ({course, handleCoursesName}) => {
             <p className='text-sm'>{details}</p>
             <div className='flex justify-between items-center pt-4 pb-7'>
                 <div className='flex gap-2 items-center'>
-                    <FontAwesomeIcon className='text-2xl' icon={faDollarSign} />
+                    <FiDollarSign className='text-2xl'/>    
                     <p>Price: {price}</p>
                 </div>
                 <div className='flex gap-2 items-center'>
-                    <FontAwesomeIcon className='text-2xl' icon={faBookOpen} /> 
+                    <GoBook className='text-2xl'/>
                     <p>Credit: {credit}hr</p>
                 </div>
             </div>

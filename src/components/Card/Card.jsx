@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
-const Card = ({course}) => {
+const Card = ({course, handleCoursesName}) => {
     const {id, course_name, details, credit, price, img} = course;
     return (
         <div className="w-[280px] h-[410px] mb-12">
@@ -19,13 +19,17 @@ const Card = ({course}) => {
                     <p>Credit: {credit}hr</p>
                 </div>
             </div>
-            <button className='w-full bg-[#2F80ED] text-white text-[18px] py-2.5 rounded-md'>Select</button>
+            <button 
+            className='w-full bg-[#2F80ED] text-white text-[18px] py-2.5 rounded-md'
+            onClick={() => handleCoursesName(id,course, credit, price)}
+            >Select</button>
         </div>
     );
 };
 
 Card.propTypes = {
     course: PropTypes.object,
+    handleCoursesName: PropTypes.func
 }
 
 export default Card

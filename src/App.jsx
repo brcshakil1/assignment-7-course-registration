@@ -36,7 +36,7 @@ function App() {
     <>
       <ToastContainer />
       <h1 className='text-4xl font-bold text-center my-12'>Course Registration</h1>
-      <div className='container mx-auto flex flex-col-reverse lg:flex-row lg:justify-between gap-10'>
+      <div className='max-w-7xl mx-auto flex flex-col-reverse lg:flex-row lg:justify-between'>
 
         {/* Cards */}
         <Cards handleCoursesName={handleCoursesName}/>

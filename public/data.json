@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "course_name": "Introduction to Web Development",
+      "details": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
+      "credit": 3,
+      "price": 199,
+      "img": "https://i.ibb.co/zJvgYxh/1-Introduction-to-Web-Development.jpg"
+    },
+    {
+      "id": 2,
+      "course_name": "Data Science Fundamentals",
+      "details": "Explore the world of data science, from data analysis to machine learning.",
+      "credit": 4,
+      "price": 249,
+      "img": "https://i.ibb.co/5kNZ6Jf/2-Data-Science-Fundamentals.jpg"
+    },
+    {
+      "id": 3,
+      "course_name": "Graphic Design Masterclass",
+      "details": "Unlock your creativity with this comprehensive graphic design course.",
+      "credit": 3,
+      "price": 179,
+      "img": "https://i.ibb.co/g6pxSQY/3-Graphic-Design-Masterclass.jpg"
+    },
+    {
+      "id": 4,
+      "course_name": "Mobile App Development with React Native",
+      "details": "Build cross-platform mobile apps using React Native and JavaScript.",
+      "credit": 4,
+      "price": 299,
+      "img": "https://i.ibb.co/Htfrm33/4-Mobile-App-Development-with-React-Native.jpg"
+    },
+    {
+      "id": 5,
+      "course_name": "Digital Marketing Strategies",
+      "details": "Master digital marketing techniques and grow your online presence.",
+      "credit": 3,
+      "price": 199,
+      "img": "https://i.ibb.co/QXW8qdH/5-Digital-Marketing-Strategies.jpg"
+    },
+    {
+      "id": 6,
+      "course_name": "Machine Learning for Beginners",
+      "details": "Get started with machine learning and build your first ML models.",
+      "credit": 4,
+      "price": 249,
+      "img": "https://i.ibb.co/55V7bjs/6-Machine-Learning-for-Beginners.jpg"
+    },
+    {
+      "id": 7,
+      "course_name": "Business Management Essentials",
+      "details": "Learn the fundamentals of business management and leadership.",
+      "credit": 3,
+      "price": 179,
+      "img": "https://i.ibb.co/SJZmTdR/7-Business-Management-Essentials.jpg"
+    },
+    {
+      "id": 8,
+      "course_name": "Photography Fundamentals",
+      "details": "Capture stunning photos with this photography basics course.",
+      "credit": 2,
+      "price": 149,
+      "img": "https://i.ibb.co/V3JsrgP/8-Photography-Fundamentals.jpg"
+    },
+    {
+      "id": 9,
+      "course_name": "Ethical Hacking and Cybersecurity",
+      "details": "Become a cybersecurity expert and protect against cyber threats.",
+      "credit": 4,
+      "price": 299,
+      "img": "https://i.ibb.co/2gP2Kbm/9-Ethical-Hacking-and-Cybersecurity.jpg"
+    }
+  ]
+  

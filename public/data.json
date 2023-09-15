@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "course_name": "Introduction to Web Development",
+      "course_name": "Web Development",
       "details": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
       "credit": 3,
       "price": 199,
@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "course_name": "Mobile App Development with React Native",
+      "course_name": "React Native Made Easy",
       "details": "Build cross-platform mobile apps using React Native and JavaScript.",
       "credit": 4,
       "price": 299,

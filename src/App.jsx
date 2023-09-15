@@ -5,10 +5,10 @@ import Cart from './components/Cart/Cart';
 function App() {
 
   return (
-    <>
-     <Cards />
-     <Cart />
-    </>
+    <div className='flex flex-col-reverse md:flex-row'>
+      <Cards />
+      <Cart />
+    </div>
   )
 }
 

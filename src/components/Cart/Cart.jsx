@@ -1,10 +1,13 @@
-
 import { PropTypes } from 'prop-types';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Cart = ({courses}) => {
     
     return (
-        <div className="">
-           <ol className='list-decimal ml-4 py-4'>
+        <div>
+            <ToastContainer />
+           <ol className='list-decimal ml-4 pb-4'>
             {
                 courses.map((course, idx) => <li key={idx}>{course.course_name}</li>)
             }

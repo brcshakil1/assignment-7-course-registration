@@ -49,7 +49,7 @@
     },
     {
       "id": 7,
-      "course_name": "Business Management Essentials",
+      "course_name": "Business Management",
       "details": "Learn the fundamentals of business management and leadership.",
       "credit": 3,
       "price": 179,
@@ -65,7 +65,7 @@
     },
     {
       "id": 9,
-      "course_name": "Ethical Hacking and Cybersecurity",
+      "course_name": "Cybersecurity",
       "details": "Become a cybersecurity expert and protect against cyber threats.",
       "credit": 4,
       "price": 299,

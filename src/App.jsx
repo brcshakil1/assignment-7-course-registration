@@ -42,7 +42,7 @@ function App() {
         <Cards handleCoursesName={handleCoursesName}/>
 
         {/* cart */}
-        <div className='mx-4'>
+        <div className='mx-4 mb-6'>
           <div className='bg-white w-full rounded-lg p-4'>
             <h3 className='text-[18px] text-[#2F80ED] font-bold pb-4'>Credit Hour Remaining {remaining} hr</h3>
             <hr />

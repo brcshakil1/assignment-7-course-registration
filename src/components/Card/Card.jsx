@@ -4,7 +4,7 @@ import { GoBook } from 'react-icons/go';
 const Card = ({course, handleCoursesName}) => {
     const {id, course_name, details, credit, price, img} = course;
     return (
-        <div className="w-full lg:w-[280px] bg-white p-4 rounded-lg">
+        <div className="w-full lg:w-[280px] bg-white p-4 rounded-lg mb-4">
             <img src={img} alt="" className="w-full rounded-md"/>
             <h2 className=' font-semibold pt-4 pb-2'>{course_name}</h2>
             <p className='text-sm'>{details}</p>

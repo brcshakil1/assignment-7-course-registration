@@ -11,17 +11,17 @@ function App() {
   const [remaining, setRemaining] = useState(20);
   const [courseTotalPrice, setCourseTotalPrice] = useState(0);
 
-  const notify = () => toast("You can't credit more than 20 hours");
+  const notify = (msg) => toast(msg);
 
   const handleCoursesName = (id,item, credit, price) => {
     const ifMatch = courses.find(course => course.id === id);
     const totalHours = hours + credit;
     const totalPrice= courseTotalPrice + price;
     if(ifMatch) {
-      alert('Course is already exist')
+      notify('Course is already exist')
     } else {
       if(totalHours > 20) {
-        notify()
+        notify("You can't credit more than 20 hours")
       } else {
         setCourseTotalPrice(totalPrice);
         setHours(totalHours);
